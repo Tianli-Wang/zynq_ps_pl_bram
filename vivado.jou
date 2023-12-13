@@ -1,0 +1,60 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Dec 12 15:14:08 2023
+# Process ID: 47008
+# Current directory: D:/PersonalCloud/ps_pl_bram/ps_pl_bram
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent39196 D:\PersonalCloud\ps_pl_bram\ps_pl_bram\ps_pl_bram.xpr
+# Log file: D:/PersonalCloud/ps_pl_bram/ps_pl_bram/vivado.log
+# Journal file: D:/PersonalCloud/ps_pl_bram/ps_pl_bram\vivado.jou
+# Running On: Prada, OS: Windows, CPU Frequency: 3110 MHz, CPU Physical cores: 12, Host memory: 16893 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/PersonalCloud/ps_pl_bram/ps_pl_bram/ps_pl_bram.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/PersonalCloud/ps_pl_bram/ps_pl_bram/ps_pl_bram.srcs/sources_1/bd/system/system.bd}
+open_run synth_1 -name synth_1
+open_bd_design {D:/PersonalCloud/ps_pl_bram/ps_pl_bram/ps_pl_bram.srcs/sources_1/bd/system/system.bd}
+regenerate_bd_layout
+ipx::edit_ip_in_project -upgrade true -name pl_bram_rd_v1_0_project -directory D:/PersonalCloud/ps_pl_bram/ps_pl_bram/ps_pl_bram.tmp/pl_bram_rd_v1_0_project d:/PersonalCloud/ps_pl_bram/ps_pl_bram/ip_repo/pl_bram_rd_1_0/component.xml
+update_compile_order -fileset sources_1
+current_project ps_pl_bram
+open_bd_design {D:/PersonalCloud/ps_pl_bram/ps_pl_bram/ps_pl_bram.srcs/sources_1/bd/system/system.bd}
+current_project pl_bram_rd_v1_0_project
+close_project
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/PersonalCloud/ps_pl_bram/ps_pl_bram/ps_pl_bram.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {D:/PersonalCloud/ps_pl_bram/ps_pl_bram/ps_pl_bram.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/PersonalCloud/ps_pl_bram/ps_pl_bram/ps_pl_bram.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {system_i/blk_mem_gen_0/U0/enb} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+save_wave_config {D:/PersonalCloud/ps_pl_bram/ps_pl_bram/ps_pl_bram.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
